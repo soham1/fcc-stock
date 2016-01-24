@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Stock Market
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/handlebars/handlebars.min.js"></script>
+  <script src="/javascripts/main.js"></script>
+</head>
+
+<body>
+  <ul id="wordList"></ul>
+  <form id="addForm">
+    <input id="newWord" type="text"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <script id="word-template" type="text/x-handlebars-template">
+    {{#each wordArray}}
+    <li id="{{this}}">{{this}}
+      <a data-word="{{this}}" class="remove" href="#">X</a>
+    </li>
+    {{/each}}
+  </script>
+</body>
+
+</html>
