@@ -27,6 +27,9 @@ var io = require('socket.io')(server);
  * Listen on provided port, on all network interfaces.
  */
 var wordArray = ["GOOG", "AAPL", "MSFT", "ORCL"];
+
+app.wordArray = wordArray;
+
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
@@ -39,7 +42,7 @@ io.on('connection', function(socket) {
     socket.broadcast.emit('Come and get new words');
   }
   socket.on('delete', function(data) {
-    console.log("Previous", data);
+    console.log("Client asked to delete data", data);
     var wordIndex = wordArray.indexOf(data.word);
     if (wordIndex !== -1) {
       wordArray.splice(wordIndex, 1);
