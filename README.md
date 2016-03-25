@@ -1,4 +1,4 @@
-#Image Search Abstraction Layer
+#Charting the Stock Market
 
 This is a solution for https://www.freecodecamp.com/challenges/chart-the-stock-market
 
