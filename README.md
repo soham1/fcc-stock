@@ -1,4 +1,4 @@
-#Charting the Stock Market
+# Charting the Stock Market
 
 This is a solution for https://www.freecodecamp.com/challenges/chart-the-stock-market
 
@@ -10,13 +10,13 @@ User Story: I can remove stocks.
 
 User Story: I can see changes in real-time when any other user adds or removes a stock. For this you will need to use Web Sockets.
 
-##Screenshot
+## Screenshot
 
-###Landing Page
+### Landing Page
 
 <img src="images/Stock1.PNG">
 
-##Technologies Used:
+## Technologies Used:
 - Node.js
 - Express
 - Socket.io
